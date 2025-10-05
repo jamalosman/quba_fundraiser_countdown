@@ -4,7 +4,7 @@ import AdminScreen from './pages/AdminScreen';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<FundraiserScreen />} />
         <Route path="/admin" element={<AdminScreen />} />
