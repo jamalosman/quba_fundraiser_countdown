@@ -30,7 +30,7 @@ const FundraiserScreen = () => {
   }).format(TARGET_AMOUNT);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-mosque-navy via-blue-900 to-indigo-950 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-mosque-dark via-mosque-burgundy to-red-950 flex items-center justify-center p-4">
       <div className="w-full max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -52,7 +52,7 @@ const FundraiserScreen = () => {
             }}
           />
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-            Quba Mosque Fundraiser
+            Purchase of Masjid Quba Leicester
           </h1>
           <p className="text-xl md:text-2xl text-mosque-gold">
             Help us purchase our mosque
@@ -63,7 +63,7 @@ const FundraiserScreen = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-2xl"
+          className="bg-white/90 backdrop-blur-lg rounded-3xl p-8 md:p-12 shadow-2xl border-2 border-mosque-gold/50"
         >
           <div className="mb-8">
             <div className="flex justify-between items-center mb-4">
@@ -72,8 +72,8 @@ const FundraiserScreen = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                <p className="text-sm md:text-base text-white/80 mb-1">Amount Raised</p>
-                <p className="text-3xl md:text-5xl font-bold text-mosque-gold">
+                <p className="text-sm md:text-base text-gray-800 mb-1">Amount Raised</p>
+                <p className="text-3xl md:text-5xl font-bold text-mosque-burgundy">
                   {formattedAmount}
                 </p>
               </motion.div>
@@ -83,8 +83,8 @@ const FundraiserScreen = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-right"
               >
-                <p className="text-sm md:text-base text-white/80 mb-1">Target</p>
-                <p className="text-2xl md:text-4xl font-bold text-white">
+                <p className="text-sm md:text-base text-gray-800 mb-1">Target</p>
+                <p className="text-2xl md:text-4xl font-bold text-gray-800">
                   {formattedTarget}
                 </p>
               </motion.div>
@@ -94,13 +94,13 @@ const FundraiserScreen = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="relative h-8 md:h-12 bg-white/20 rounded-full overflow-hidden"
+              className="relative h-8 md:h-12 bg-amber-900 rounded-full overflow-hidden"
             >
               <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: `${Math.min(percentage, 100)}%` }}
                 transition={{ duration: 1.5, delay: 0.8, ease: "easeOut" }}
-                className="h-full bg-gradient-to-r from-mosque-gold to-yellow-400 rounded-full relative overflow-hidden"
+                className="h-full bg-gradient-to-r from-orange-500 via-mosque-gold to-yellow-500 rounded-full relative overflow-hidden"
               >
                 <motion.div
                   className="absolute inset-0 bg-white/30"
@@ -133,7 +133,7 @@ const FundraiserScreen = () => {
             transition={{ duration: 0.6, delay: 1.4 }}
             className="text-center"
           >
-            <p className="text-white/90 text-lg md:text-xl mb-6">
+            <p className="text-gray-950 text-lg md:text-xl mb-6">
               Every contribution brings us closer to our goal
             </p>
             <motion.div
@@ -147,7 +147,7 @@ const FundraiserScreen = () => {
               }}
               className="inline-block"
             >
-              <p className="text-mosque-gold text-2xl md:text-3xl font-bold">
+              <p className="text-mosque-burgundy text-2xl md:text-3xl font-bold">
                 JazakAllahu Khairan
               </p>
             </motion.div>

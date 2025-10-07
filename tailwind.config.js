@@ -7,9 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'mosque-blue': '#1e3a5f',
-        'mosque-navy': '#0f1f38',
-        'mosque-gold': '#d4af37',
+        'mosque-burgundy': '#8B1515',
+        'mosque-maroon': '#A52A2A',
+        'mosque-gold': '#D4A017',
+        'mosque-cream': '#F5F0E8',
+        'mosque-dark': '#5C1010',
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

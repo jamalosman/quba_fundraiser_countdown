@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jamal/Downloads/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
